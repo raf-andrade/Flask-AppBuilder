@@ -35,6 +35,18 @@ def action(name, text, confirmation=None, icon=None, multiple=True, single=True)
         :param single:
             If true will display action on show view
     """
+ 
+def index():
+    if request.method == 'POST':
+        db.add_comment(request.form['comment'])
+
+    search_query = request.args.get('q')
+
+    comments = db.get_comments(search_query)
+
+    return render_template('index.html',
+                           comments=comments,
+                           search_query=search_query)
 
     def wrap(f):
         f._action = (name, text, confirmation, icon, multiple, single)
