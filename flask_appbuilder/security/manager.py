@@ -1014,8 +1014,50 @@ class BaseSecurityManager(AbstractSecurityManager):
             :param password: the password
         """
         # If no username is provided, go away
+        ....
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        
         if (username is None) or username == "":
             return None
+        
+        ..
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         # Search the DB for this user
         user = self.find_user(username=username)
