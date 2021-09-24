@@ -410,6 +410,16 @@ class OAuthRegistrationRoleTestCase(unittest.TestCase):
         self.assertOnlyDefaultUsers()
 
         # register a user
+        .
+        .
+        .
+        .
+        
+        
+        
+        .
+        .
+        
         new_user = sm.add_user(  # noqa
             username="alice",
             first_name="Alice",
@@ -417,6 +427,22 @@ class OAuthRegistrationRoleTestCase(unittest.TestCase):
             email="alice@example.com",
             role=[],
         )
+        
+        .
+        .
+        .
+        
+        
+        
+        .
+        
+        .
+        .
+        
+        .
+        
+        
+        
 
         # validate - user was registered
         self.assertEqual(len(sm.get_all_users()), 3)
